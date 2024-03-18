@@ -1,14 +1,14 @@
-# visio-translation-feature
+# visio-translation-feature via PowerShell (Workaround)
 
-# ⚪ NOTES FOR USERS
+### ⚪ NOTES FOR USERS
 
-- Requirements: Office 365 installed and activated
+- Requirements: Office 365 installed and activated.
 
-- Create a empty folder and place the powershell script file and the file you wisht to translate in the same place together,
-- Copy the path of the script by Shift + right clicking the powershell script file, and select "Copy as path"
-- then run PowerShell as administrator and
-- run the scritp with this formula {. "<PATH_OF_SCRIPT>"} without curly braces, but don't remove the quotes
-- It might throw some red error, ignore them, it will still work fine as tested many times in many environments
+- Create an empty folder and move the powershell script file and the file you wisht to translate to the same place together.
+- Copy the path of the script by Shift + right clicking the powershell script file, and select "Copy as path".
+- Run PowerShell as administrator.
+- Run the scritp with this formula {. "<PATH_OF_SCRIPT>"} without curly braces, but don't remove the quotes.
+- It might throw some red error, ignore them, it will still work fine as tested many times in many environments.
 
 - Translate your diagrams in a Visio file using Office 365.
 - You must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name. Otherwise, the script will exit and won't proceed. (This just to make sure you're not working on the wrong file.)
