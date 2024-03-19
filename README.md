@@ -5,7 +5,7 @@
 - Requirements: Office 365 installed and activated on a Windows machine.
 - You first must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name, e.g. `myfile-tr.vsdx`. Otherwise, the script will exit and won't proceed. (This just to working accidentally on a wrong file).
 - If it meets the criteria, it creates a folder with file name suffix "_copy" at the end, which will be exported later as a .vsdx file that encompasses the translation.
-- Use `translate_visio_stable.ps1` which doesn't open MS Word automatically for more stable performance, whereas `translate_visio_file.ps1` opens MS Word during runtime.
+- Use `translate_visio_stable.ps1` if you don't wish to automatically open a new blank word document, whereas `translate_visio_file.ps1` opens MS Word during runtime every time the script is run.
 
 ## Steps:
 
