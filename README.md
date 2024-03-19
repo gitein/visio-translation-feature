@@ -14,7 +14,7 @@
 - Run PowerShell as administrator.
 -  Change current directory to the path where the script is saved `cd "PATH_TO_SCRIPT"`, but DO NOT include the name of the file, just the directoy path.
   
-- You may also need to temporarily override execution policy in your PowerShell environment before you run the script if you get an error that refers to blocking scripts of untrusted publishers. If so, then consider using the command `Unblock-File -Path .\Start-ActivityTracker.ps1` or `Set-ExecutionPolicy -Scope CurrentUser <Policy>` in case it failed to run using the previous method and then feel free to reset to everything to defaults after the job is done, and this is for your security, of course.
+- You may also need to temporarily override execution policy in your PowerShell environment before you run the script if you get an error that refers to blocking scripts of untrusted publishers. If so, then consider using the command `Unblock-File -Path .\translate_visio_stable.ps1` or `Set-ExecutionPolicy -Scope CurrentUser <Policy>` in case it failed to run using the previous method and then feel free to reset to everything to defaults after the job is done, and this is for your security, of course.
   
 - It a serious matter you must bear in mind, so please don't forget to reset the execution policy, if you want to view the current policy use the command `Get-ExecutionPolicy -List`, policy `RemoteSigned` is considered moderate and safe.
 - Read the Microsoft documentation for more information [Link](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4).
