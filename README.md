@@ -13,7 +13,7 @@
 - Copy the path of the script with "Shift + right clicking" the powershell script file, and select "Copy as path".
 - Run PowerShell as administrator.
 - You may need to override execution policy in PowerShell before you run the script in case you get an error that refers to scripts block due to untrusted resources. If so, consider using the command `Set-ExecutionPolicy -Scope CurrentUser <Policy>` and then feel free to reset to defaults after it does the job.
-- Read the Microsoft documentation for more information [https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4](Link)
+- Read the Microsoft documentation for more information [Link](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4)
 
   
 - Run the scritp with this formula {. "<PATH_OF_SCRIPT>"}, but without curly braces, and don't remove the quotes.
