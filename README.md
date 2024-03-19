@@ -12,10 +12,13 @@
 - Create an empty folder and move the powershell script file and the file you wish to translate to the same place together.
 - Copy the path of the script with "Shift + right clicking" the powershell script file, and select "Copy as path".
 - Run PowerShell as administrator.
+- You may need to override execution policy in PowerShell before you run the script in case you get an error that refers to scripts block due to untrusted resources. If so, consider using the command `Set-ExecutionPolicy -Scope CurrentUser <Policy>` and then feel free to reset to defaults after it does the job.
+- Read the Microsoft documentation for more information [https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4](Link)
+
+  
 - Run the scritp with this formula {. "<PATH_OF_SCRIPT>"}, but without curly braces, and don't remove the quotes.
 - It might throw some red error, ignore them, they just relate to error when connecting to COM server of Microsoft that is responsible for opening MS Word, it will still work fine as tested many times in many environments.
 
-- C.
 - Translate your diagrams in the Visio file using Word 365, Copy and paste the content text out of the TTT.txt the script will create for you, paste into Word, select it, and hit "Shift + Alt + F7" to translate.
 - Then paste the translated text of Word back into the TTT.txt file, confirm that TTT.txt file was updated by inputting "Y" in the powershell pipeline and the script will take care of the heavy job for you.
 
