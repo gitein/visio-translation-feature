@@ -1,19 +1,22 @@
-# visio-translation-feature via PowerShell (Workaround)
+# {isio-لإranslation-[eature via PowerShell (Workaround)
 
 ### ⚪ NOTES FOR USERS
 
-- Requirements: Office 365 installed and activated.
-
-- Create an empty folder and move the powershell script file and the file you wisht to translate to the same place together.
-- Copy the path of the script by Shift + right clicking the powershell script file, and select "Copy as path".
-- Run PowerShell as administrator.
-- Run the scritp with this formula {. "<PATH_OF_SCRIPT>"} without curly braces, but don't remove the quotes.
-- It might throw some red error, ignore them, it will still work fine as tested many times in many environments.
-
-- Translate your diagrams in a Visio file using Office 365.
+- Requirements: Office 365 installed and activated. 
 - You must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name. Otherwise, the script will exit and won't proceed. (This just to make sure you're not working on the wrong file.)
 - If criteria met, it creates a folder with "_copy" at the end which later will be exported as a copy .vsdx file that holds the translation.
-- Once MS Word 365 opens, proceed with the instructions to translate the text and update the TTT.txt file which will be created by the script itself and then gets deleted after exporting the final Visio file.
-- It's just about adding the text of TTT.txt to Word, translate it, and then pasting back to the TTT.txt file, and the script does the heavy job on your behalf.
 
+## Steps:
+
+- Create an empty folder and move the powershell script file and the file you wish to translate to the same place together.
+- Copy the path of the script with "Shift + right clicking" the powershell script file, and select "Copy as path".
+- Run PowerShell as administrator.
+- Run the scritp with this formula {. "<PATH_OF_SCRIPT>"}, but without curly braces, and don't remove the quotes.
+- It might throw some red error, ignore them, they just relate to error when connecting to COM server of Microsoft that is responsible for opening MS Word, it will still work fine as tested many times in many environments.
+
+- C.
+- Translate your diagrams in the Visio file using Word 365, Copy and paste the content text out of the TTT.txt the script will create for you, paste into Word, select it, and hit "Shift + Alt + F7" to translate.
+- Then paste the translated text of Word back into the TTT.txt file, confirm that TTT.txt file was updated by inputting "Y" in the powershell pipeline and the script will take care of the heavy job for you.
+
+- That's pretty much it.
 - Thanks for using my solution.
