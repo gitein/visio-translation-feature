@@ -1,4 +1,4 @@
-# Visio-Translation-Feature via PowerShell (Workaround)
+# 🔷 Visio-Translation-Feature via PowerShell (Workaround)
 
 ### ⚪ NOTES FOR USERS
 
