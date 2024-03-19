@@ -20,7 +20,7 @@
 - Read the Microsoft documentation for more information [Link](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4).
 
   
-- Run the following command in PowerShell `. "PATH_TO_SCRIPT"` and replace the parameter with the real value, and don't remove the quotes.
+- Run the following command in PowerShell `. "PATH_TO_SCRIPT_FILE_COPIED_BY_PATH"` and replace the parameter with the real value that also includes the file with extension .vsdx at the end, and don't remove the quotes.
 - It might throw some red error, ignore them, they just relate to error when connecting to COM server of Microsoft that is responsible for initiating a MS Word instance, it will still work fine as it's already tested in many environments.
 
 - Translate your diagrams in the Visio file using Word 365, Copy and paste the content text out of the TTT.txt the script will create for you, paste into Word, select it, and hit "Shift + Alt + F7" to translate.
