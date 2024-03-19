@@ -3,7 +3,7 @@
 ### ⚪ NOTES FOR USERS
 
 - Requirements: Office 365 installed and activated on a Windows machine.
-- You first must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name, e.g. `myfile-tr.vsdx`. Otherwise, the script will exit and won't proceed. (This just to working accidentally on a wrong file).
+- You first must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name, e.g. `myfile-tr.vsdx`. Otherwise, the script will exit and won't proceed. (just to avoid working accidentally on the wrong file).
 - If it meets the criteria, it creates a folder with file name suffix "_copy" at the end, which will be exported later as a .vsdx file that encompasses the translation.
 - Use the file version `translate_visio_stable.ps1` if you don't wish to automatically open a new blank word document every single time you run the script, whereas `translate_visio_file.ps1`doesn't opens MS Word during runtime.
 
@@ -13,7 +13,7 @@
 - Copy the path of the script with "Shift + right clicking" the powershell script file, and select "Copy as path".
 - Run PowerShell as administrator.
 - You may need to override execution policy in PowerShell before you run the script in case you get an error that refers to scripts block due to untrusted resources. If so, consider using the command `Set-ExecutionPolicy -Scope CurrentUser <Policy>` and then feel free to reset to defaults after it does the job.
-- Read the Microsoft documentation for more information [Link](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4)
+- Read the Microsoft documentation for more information [Link](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4).
 
   
 - Run the following command in PowerShell `. "PATH_TO_SCRIPT"` and replace the placeholder with the real path, but don't remove the quotes.
