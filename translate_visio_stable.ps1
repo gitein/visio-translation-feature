@@ -31,7 +31,7 @@ if ($files.Count -gt 1) {
     $files | ForEach-Object { Write-Host $_.FullName }
 
 
-    Write-Host "Please delete the redundant files manually and try again." -ForegroundColor Red
+    Write-Host "Please remove the redundant files manually and try again." -ForegroundColor Red
     Write-Host "Exiting script..."
     exit
 } elseif ($files.Count -eq 0) {
