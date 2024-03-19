@@ -4,7 +4,7 @@
 
 - Requirements: Office 365 installed and activated. 
 - You must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name. Otherwise, the script will exit and won't proceed. (This just to make sure you're not working on the wrong file.)
-- If criteria met, it creates a folder with "_copy" at the end which later will be exported as a copy .vsdx file that holds the translation.
+- If it meets the criteria, it creates a folder with "_copy" at the end which later will be exported as a .vsdx file that which encompasses the translation.
 
 ## Steps:
 
