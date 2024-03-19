@@ -2,9 +2,9 @@
 
 ### ⚪ NOTES FOR USERS
 
-- Requirements: Office 365 installed and activated. 
-- You must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name. Otherwise, the script will exit and won't proceed. (This just to make sure you're not working on the wrong file.)
-- If it meets the criteria, it creates a folder with "_copy" at the end which later will be exported as a .vsdx file that which encompasses the translation.
+- Requirements: Office 365 installed and activated on a Windows machine.
+- You first must edit the file you'd translate to include the suffix "-tr" at the end of the Visio file name, e.g. `myfile-tr.vsdx`. Otherwise, the script will exit and won't proceed. (This just to working accidentally on a wrong file).
+- If it meets the criteria, it creates a folder with file name suffix "_copy" at the end, which will be exported later as a .vsdx file that encompasses the translation.
 - Use `translate_visio_stable.ps1` which doesn't open MS Word automatically for more stable performance, whereas `translate_visio_file.ps1` opens MS Word during runtime.
 
 ## Steps:
@@ -17,7 +17,7 @@
 
   
 - Run the following command in PowerShell `. "PATH_TO_SCRIPT"` and replace the placeholder with the real path, but don't remove the quotes.
-- It might throw some red error, ignore them, they just relate to error when connecting to COM server of Microsoft that is responsible for opening MS Word, it will still work fine as tested many times in many environments.
+- It might throw some red error, ignore them, they just relate to error when connecting to COM server of Microsoft that is responsible for initiating a MS Word instance, it will still work fine as it's already tested in many environments.
 
 - Translate your diagrams in the Visio file using Word 365, Copy and paste the content text out of the TTT.txt the script will create for you, paste into Word, select it, and hit "Shift + Alt + F7" to translate.
 - Then paste the translated text of Word back into the TTT.txt file, confirm that TTT.txt file was updated by inputting "Y" in the powershell pipeline and the script will take care of the heavy job for you.
